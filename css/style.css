@@ -1,30 +1,5 @@
 /* Fonts */
-@font-face {
-    font-family: 'Stem';
-    src: url('../fonts/Stem-Light.ttf');
-}
-
-@font-face {
-    font-family: 'Stem-Bold';
-    src: url('../fonts/Stem-Bold.ttf');
-}
-
-@font-face {
-    font-family: 'Stem-Medium';
-    src: url('../fonts/Stem-Medium.ttf');
-}
-
-@font-face {
-    font-family: 'Gilroy-Medium';
-    src: url('../fonts/Gilroy-Medium.ttf');
-}
-
-@font-face {
-    font-family: 'Gilroy-Bold';
-    src: url('../fonts/Gilroy-Bold.ttf');
-}
-
-
+@import url('../fonts/fonts.css');
 
 :root {
     --base-color: #00BDF8;
@@ -44,10 +19,13 @@ html {
     font-size: 62.5%;
     overflow-x: hidden;
     transition: .2s;
+    scroll-behavior: smooth;
 }
 
 body {
-    background-color: #fff;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
     font-size: 1.6rem;
 }
 
@@ -90,7 +68,31 @@ body {
 
 /* Header */
 .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: transparent;
+    transition: all .3s ease-in-out;
     padding: 3.3rem 0;
+}
+
+.header.fixed {
+    position: fixed;
+    background: #fff;
+    box-shadow: 0 .5rem 2rem rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+    animation: slideDown .3s ease-in-out;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
 }
 
 .header-inner {
@@ -121,8 +123,12 @@ body {
     display: block;
     height: .3rem;
     width: 100%;
-    background: var(--black);
+    background: var(--white);
     transition: all .3s ease;
+}
+
+.header.fixed .burger > span {
+    background: var(--black);
 }
 
 .menu {
@@ -135,11 +141,15 @@ body {
     font-weight: 500;
     font-size: 1.8rem;
     line-height: 2.4rem;
-    color: var(--black);
+    color: var(--white);
     opacity: .7;
 
     transition: opacity .2s ease, 
                 border-bottom .1s ease;
+}
+
+.header.fixed .menu-link {
+    color: var(--black);
 }
 
 .menu-link:hover {
@@ -189,7 +199,7 @@ body {
 /* Intro */
 .intro {
     position: relative;
-    background: rgba(26, 35, 110, 0.5) url('../img/intro.png') center / cover no-repeat;
+    background: rgba(26, 35, 110, 0.5) url('../img/intro1.jpg') center / cover no-repeat;
     background-blend-mode: multiply;
     min-height: 79.8rem;
     height: auto;
@@ -223,7 +233,7 @@ body {
     margin-bottom: 2.4rem;
 }
 
-.intro-btn button:first-child {
+.intro-btn a > button:first-child {
     padding: 1.6rem 3.2rem;
     font-weight: 500;
     font-size: 1.8rem;
@@ -237,7 +247,7 @@ body {
     transition: background-color .2s ease;
 }
 
-.intro-btn button:first-child:hover {
+.intro-btn a > button:first-child:hover {
     background-color: #1ea1c9;
 }
 
@@ -301,12 +311,19 @@ body {
 
 .team-inner {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 25.5rem);
+    grid-template-columns: repeat(auto-fit, 25rem);
     justify-content: center;
     gap: 3rem;
 }
 
+.team-item {
+    text-align: center;
+}
+
 .team-img {
+    width: 25rem;
+    height: 37rem;
+    border-radius: 1rem;
     margin-bottom: 2.4rem;
 }
 
@@ -369,7 +386,7 @@ body {
     margin-bottom: 3.2rem;
 }
 
-.about-btn {
+/* .about-btn {
     font-family: 'Gilroy-Bold', sans-serif;
     padding: 1.6rem 3.2rem;
     font-weight: bold;
@@ -386,7 +403,7 @@ body {
 
 .about-btn:hover {
     background-color: #1ea1c9;
-}
+} */
 
 /* Advantages */
 .advantages {
@@ -495,7 +512,7 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-blend-mode: multiply;
+    background-blend-mode: darken;
     width: 100%;
     height: 38rem;
     border-radius: 1.6rem;
@@ -504,6 +521,7 @@ body {
     align-items: center;
     justify-content: flex-end;
     padding-bottom: 2.4rem;
+    position: relative;
 }
 
 .services-item[data-bg="cleaning"] {
@@ -539,13 +557,33 @@ body {
 }
 
 .services-item-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    text-align: center;
     font-weight: bold;
     font-size: 1.8rem;
     line-height: 2.4rem;
     color: var(--white);
-    opacity: .8;
+    background-color: #1837cd;
+    width: 100%;
+    height: 100%;
+    border-radius: 1.6rem;
+    opacity: 0;
+    cursor: pointer;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    transition: opacity .2s ease-in-out;
 }
 
+.services-item:hover .services-item-text {
+    opacity: 1;
+}
 /* Cabinet */
 .cabinet {
     margin-bottom: 8rem;
@@ -556,6 +594,7 @@ body {
     grid-template-columns: repeat(auto-fit, 55rem);
     justify-content: center;
     gap: 3rem;
+    margin-bottom: 2rem;
 }
 
 .cabinet-left img {
@@ -586,26 +625,15 @@ body {
     margin-bottom: 8rem;
 }
 
-.reviews-inner {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 54rem);
-    justify-content: center;
-    gap: 3rem;
-}
-
 .reviews-item {
     background-color: var(--white);
     border: .1rem solid rgba(0, 0, 0, 0.1);
     border-radius: 1.6rem;
     padding: 4rem 3.2rem;
     text-align: center;
-}
-
-.reviews-item img {
-    width: 6.4rem;
-    height: 6.4rem;
-    border: .1rem solid rgba(0, 0, 0, 0.1);
-    border-radius: 10rem;
+    min-height: 30rem;
+    min-width: 10rem;
+    margin: 0 1.5rem;
 }
 
 .reviews-text {
@@ -617,25 +645,8 @@ body {
     margin: 3.2rem auto;
 }
 
-.reviews-name {
-    font-weight: 500;
-    font-size: 1.8rem;
-    line-height: 2.4rem;
-    color: var(--black);
-    margin-bottom: .4rem;
-}
-
-.reviews-prof {
-    font-weight: bold;
-    font-size: 1.3rem;
-    line-height: 1.8rem;
-    color: var(--black);
-    opacity: .4;
-}
-
-
 /* Partners */
-.partners {
+/* .partners {
     margin-bottom: 12rem;
 }
 
@@ -664,7 +675,7 @@ body {
 
 .partners-item img {
     width: 25.5rem;
-}
+} */
 
 /* Record */
 .record {
@@ -828,7 +839,12 @@ label {
         z-index: 1000;
     }
 
+    .menu-link {
+        color: var(--black);
+    }
+
     .menu.active {
+        overflow-x: hidden;
         transform: translateX(0);
     }
 
@@ -838,6 +854,7 @@ label {
 
     .burger.active span:nth-child(1) {
         transform: rotate(45deg) translate(.5rem, .5rem);
+        background: var(--black);
     }
 
     .burger.active span:nth-child(2) {
@@ -845,6 +862,7 @@ label {
     }
 
     .burger.active span:nth-child(3) {
+        background: var(--black);
         transform: rotate(-45deg) translate(.7rem, -.6rem);
     }
 
@@ -876,12 +894,12 @@ label {
         gap: 1rem;
     }
 
-    .intro-btn button:first-child, .intro-btn button:last-child {
+    .intro-btn a > button:first-child, .intro-btn button:last-child {
         margin-right: 0;
     }
 
-    .reviews-inner {
-        grid-template-columns: repeat(auto-fit, 100%);
+    .reviews-text {
+        max-width: 27.6rem;
     }
 
     .record-title {

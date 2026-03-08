@@ -8,17 +8,18 @@
     <link rel="shortcut icon" href="favicon/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
     <link rel="manifest" href="favicon/site.webmanifest" />
-    <meta name="keywords" content="стоматология, стоматолог, стоматология в питере, сайт о стоматологии">
+    <meta name="keywords" content="стоматология, стоматолог, стоматология в каспийске, сайт о стоматологии, клиника цахаева">
     <meta name="description" content="Безболезненное лечение, протезирование и отбеливание зубов с гарантией качества. Современные технологии, комфортная атмосфера и доступные цены. Вернём здоровье и красоту вашей улыбки!">
     <meta name="googlebot" content="notranslate">
     <meta name="google" content="nopagereadaloud">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Стоматология</title>
 </head>
 <body>
     <div id="wrapper">
         <div class="top">
-            <header class="header">
+            <header class="header" id="header">
                 <div class="container">
 
                     <div class="header-inner">
@@ -35,16 +36,18 @@
                         </div>
 
                         <nav class="menu" id="menu">
-                            <a href="#" class="menu-link">О компании</a>
-                            <a href="#" class="menu-link">Новости</a>
-                            <a href="#" class="menu-link">Помощь</a>
-                            <a href="#" class="menu-link">Отзывы</a>
-                            <a href="#" class="menu-link">Контакты</a>
-                            <div class="phone">
+                            <a href="#team" class="menu-link">Команда</a>
+                            <a href="#about" class="menu-link">О нас</a>
+                            <a href="#services" class="menu-link">Услуги</a>
+                            <a href="#reviews" class="menu-link">Отзывы</a>
+                            <a href="#contact" class="menu-link">Контакты</a>
+                            <!-- <div class="phone">
                                 <span>Cлужба продаж</span>
                                 <span>+7 495 123-45-67</span>
-                            </div>
-                            <button class="header-button">Заказать звонок</button>
+                            </div> -->
+                            <a href="tel:89634230522">
+                                <button class="header-button">Заказать звонок</button>
+                            </a>
                         </nav>
 
                     </div>
@@ -57,10 +60,12 @@
                 <div class="container">
 
                     <div class="intro-info">
-                        <h1 class="title" style="color: #fff;">Стоматология <br> в Санкт-Петербурге</h1>
+                        <h1 class="title" style="color: #fff;">Клиника Цахаевой</h1>
                         <h3 class="subtitle intro-subtitle">Мы работаем с материалами ведущих мировых производителей <br> и предоставляем 100% гарантию</h3>
                         <div class="intro-btn">
-                            <button>Записаться на лечение</button>
+                            <a href="#record">
+                                <button>Записаться на лечение</button>
+                            </a>
                             <button>О стоматологии</button>
                         </div>
                         <p class="intro-text">Оставьте заявку прямо сейчас и получите в подарок бесплатную <br> диагностику состояния ваших зубов</p>
@@ -72,7 +77,7 @@
             </div>
 
             <!-- Team -->
-            <div class="team">
+            <div class="team" id="team">
                 <div class="container">
 
                     <h3 class="subtitle team-name">Команда</h3>
@@ -81,31 +86,47 @@
 
                     <div class="team-inner">
                         
-                        <div class="team-item">
-                            <img src="img/team/1.png" class="team-img" alt="Team 1">
-                            <h3 class="team-fullname">Имя Фамилия</h3>
-                            <p class="team-desc">Описание</p>
+                        <div class="team-item" data-aos="fade-up" data-aos-delay="150">
+                            <img src="img/team/1.jpg" class="team-img" alt="Team 1">
+                            <h3 class="team-fullname">Бургуев Магомедрасул Айгунович</h3>
+                            <p class="team-desc">врач-ортопед</p>
                         </div>
 
-                        <div class="team-item">
-                            <img src="img/team/2.png" class="team-img" alt="Team 2">
-                            <h3 class="team-fullname">Имя Фамилия</h3>
-                            <p class="team-desc">Описание</p>
+                        <div class="team-item" data-aos="fade-up" data-aos-delay="300">
+                            <img src="img/team/2.jpg" class="team-img" alt="Team 2">
+                            <h3 class="team-fullname">Арбахов Магомедрасул Магомедович</h3>
+                            <p class="team-desc">врач-терапевт</p>
                         </div>
 
-                        <div class="team-item">
-                            <img src="img/team/3.png" class="team-img" alt="Team 3">
-                            <h3 class="team-fullname">Имя Фамилия</h3>
-                            <p class="team-desc">Описание</p>
+                        <div class="team-item" data-aos="fade-up" data-aos-delay="450">
+                            <img src="img/team/3.jpg" class="team-img" alt="Team 3">
+                            <h3 class="team-fullname">Шихгафизов Рустам Зиявутдинович</h3>
+                            <p class="team-desc">врач-терапевт</p>
                         </div>
 
-                        <div class="team-item">
-                            <img src="img/team/4.png" class="team-img" alt="Team 4">
-                            <h3 class="team-fullname">Имя Фамилия</h3>
-                            <p class="team-desc">Описание</p>
+                        <div class="team-item" data-aos="fade-up" data-aos-delay="600">
+                            <img src="img/team/4.jpg" class="team-img" alt="Team 4">
+                            <h3 class="team-fullname">Хидирбеков Газимагомед Багаутдинович</h3>
+                            <p class="team-desc">детский врач</p>
                         </div>
 
+                        <div class="team-item" data-aos="fade-up" data-aos-delay="750">
+                            <img src="img/team/5.jpg" class="team-img" alt="Team 5">
+                            <h3 class="team-fullname">Шкарупа Анастасия Викторовна</h3>
+                            <p class="team-desc">врач-терапевт</p>
+                        </div>
 
+                        <div class="team-item" data-aos="fade-up" data-aos-delay="900">
+                            <img src="img/team/6.jpg" class="team-img" alt="Team 6">
+                            <h3 class="team-fullname">Цахаева Кистаман Халиловна</h3>
+                            <p class="team-desc">врач-ортодонт</p>
+                        </div>
+
+                        <div class="team-item" data-aos="fade-up" data-aos-delay="1050">
+                            <img src="img/team/7.jpg" class="team-img" alt="Team 7">
+                            <h3 class="team-fullname">Цахаева Патимат Рамазановна </h3>
+                            <p class="team-desc">детский врач</p>
+                        </div>
 
                     </div>
 
@@ -113,18 +134,17 @@
             </div>
 
             <!-- About -->
-             <div class="about">
+             <div class="about" id="about">
                 <div class="container">
                     
                     <div class="about-info">
                         <h3 class="about-title">О компании</h3>
                         <h1 class="about-subtitle">О стоматологии</h1>
                         <p class="about-text">
-                            В стоматологии Стом-Ос понимают, насколько для Вас важны зубы – ведь это не только здоровье, но и красота, которая даёт уверенность в своих силах.
-                            <br> <br>
-                            Далеко не каждого врача можно допустить внутрь своего организма делать сложнейшие манипуляции и получить непредсказуемый результат. Стоматологи-имплантологи уверены в своих силах, что всё сделают Вам идеально, именно поэтому дают 110% гарантию результата на свою работу. Гарантия на имплантацию действует 50 лет.
+                            Клиника Цахаевой создает улыбки, в которые невозможно не влюбиться. Мы знаем, что идеальные зубы — это не только безупречное здоровье, но и ваш главный инструмент успеха, источник ежедневной уверенности в себе.
+                            <br><br>
+                            Имплантология — это искусство, где не место сомнениям. В клинике Цахаевой работают врачи, которые настолько виртуозно владеют мастерством реконструкции улыбки, что дают абсолютную гарантию на результат. Мы возвращаем зубы на 50 лет вперед, чтобы каждый день вы сияли без ограничений.
                         </p>
-                        <button class="about-btn">Подробнее</button>
                     </div>
 
                 </div>
@@ -139,25 +159,25 @@
 
                     <div class="advantages-inner">
 
-                        <div class="advantages-item">
+                        <div class="advantages-item" data-aos="fade-up" data-aos-delay="150">
                             <h1 class="advantages-item-percent">%</h1>
                             <h3 class="advantages-item-title">Консультация</h3>
                             <p class="advantages-text">Бесплатная первая консультация специалиста</p>
                         </div>
 
-                         <div class="advantages-item">
+                         <div class="advantages-item" data-aos="fade-up" data-aos-delay="300">
                             <h1 class="advantages-item-percent">%</h1>
                             <h3 class="advantages-item-title">Осмотр</h3>
                             <p class="advantages-text">Тщательный осмотр и расчет лечения</p>
                         </div>
 
-                         <div class="advantages-item">
+                         <div class="advantages-item" data-aos="fade-up" data-aos-delay="450">
                             <h1 class="advantages-item-percent">%</h1>
                             <h3 class="advantages-item-title">Гарантия</h3>
                             <p class="advantages-text">Пожизненная гарантия от производителя</p>
                         </div>
 
-                         <div class="advantages-item">
+                         <div class="advantages-item" data-aos="fade-up" data-aos-delay="600">
                             <h1 class="advantages-item-percent">%</h1>
                             <h3 class="advantages-item-title">Не больно</h3>
                             <p class="advantages-text">Безболезненное проведение процедуры имплантации</p>
@@ -170,45 +190,45 @@
             </div>
 
             <!-- Services -->
-            <div class="services">
+            <div class="services" id="services">
                 <div class="container">
 
-                    <h3 class="subtitle services-title">Категория</h3>
-                    <h1 class="title" style="color: #fff;">Большой заголовок</h1>
+                    <!-- <h3 class="subtitle services-title">Категория</h3> -->
+                    <h1 class="title" style="color: #fff;">Эстетика, которой можно доверять</h1>
                     <p class="services-text">
-                        Продавать больше - это все, что нужно, чтобы направлять <br> посетителей через правильные шаги
+                        В клинике Цахаевой мы объединяем безупречную красоту улыбки и надежность современных технологий. Доверьте здоровье профессионалам, которые дают 110% гарантии
                     </p>
 
                     <div class="services-inner">
 
-                        <div class="services-item" data-bg="cleaning">
+                        <div class="services-item" data-bg="cleaning" data-aos="fade-up" data-aos-delay="150">
                             <h3 class="services-item-title">Чистка зубов</h3>
-                            <p class="services-item-text">Описание</p>
+                            <p class="services-item-text">Air Flow & Ультразвук. Возвращаем зубам природный блеск и свежесть дыхания. Безболезненно удаляем налет и полируем эмаль, чтобы вы сияли каждый день.</p>
                         </div>
 
-                        <div class="services-item" data-bg="filling">
+                        <div class="services-item" data-bg="filling" data-aos="fade-up" data-aos-delay="300">
                             <h3 class="services-item-title">Пломба</h3>
-                            <p class="services-item-text">Описание</p>
+                            <p class="services-item-text">Эстетическая реставрация. Ставим пломбы, которые выдерживают проверку временем и кофе. Восстанавливаем анатомию зуба идеально точно, чтобы вы забыли о кариесе надолго.</p>
                         </div>
 
-                        <div class="services-item" data-bg="implantation">
+                        <div class="services-item" data-bg="implantation" data-aos="fade-up" data-aos-delay="450">
                             <h3 class="services-item-title">Имплантация</h3>
-                            <p class="services-item-text">Описание</p>
+                            <p class="services-item-text">Надежно на 50 лет. Восстанавливаем даже безнадежные случаи. Полная гарантия на приживление и долговечность. С нашими имплантами вы забудете, что такое съемные протезы.</p>
                         </div>
 
-                        <div class="services-item" data-bg="crowns">
+                        <div class="services-item" data-bg="crowns" data-aos="fade-up" data-aos-delay="600">
                             <h3 class="services-item-title">Коронки & Мосты</h3>
-                            <p class="services-item-text">Описание</p>
+                            <p class="services-item-text">Искусство протезирования. Создаем конструкции, которые идеально вписываются в ваш прикус. Керамика и диоксид циркония — никакого металла во рту, только эстетика и комфорт.</p>
                         </div>
 
-                        <div class="services-item" data-bg="caries">
+                        <div class="services-item" data-bg="caries" data-aos="fade-up" data-aos-delay="750">
                             <h3 class="services-item-title">Лечение кариеса</h3>
-                            <p class="services-item-text">Описание</p>
+                            <p class="services-item-text">Без боли и страха. Лечим бережно и под микроскопом, сохраняя максимум здоровых тканей зуба. Ставим точку в борьбе с кариесом раз и навсегда.</p>
                         </div>
 
-                        <div class="services-item" data-bg="complex-cases">
+                        <div class="services-item" data-bg="complex-cases" data-aos="fade-up" data-aos-delay="900">
                             <h3 class="services-item-title">Сложные случаи</h3>
-                            <p class="services-item-text">Описание</p>
+                            <p class="services-item-text">Комплексный подход. Нет нерешаемых задач! Работаем с атрофией кости, полной адентией и заболеваниями пародонта. Возвращаем здоровье и качество жизни.</p>
                         </div>
 
                     </div>
@@ -230,11 +250,21 @@
                         </div>
                     </div>
 
+                    <div class="cabinet-inner">
+                        <div class="cabinet-right">
+                            <img src="img/cabinet/4.jpg" alt="Cabinet 2">
+                            <img src="img/cabinet/5.jpg" alt="Cabinet 3">
+                        </div>
+                        <div class="cabinet-left">
+                            <img src="img/cabinet/6.jpg" alt="Cabinet 1">
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
             <!-- Reviews -->
-            <div class="reviews">
+            <div class="reviews" id="reviews"> 
                 <div class="container">
 
                     <h1 class="title">Отзывы</h1>
@@ -243,21 +273,27 @@
                     <div class="reviews-inner">
                         
                         <div class="reviews-item">
-                            <img src="img/reviews.png" alt="Reviews">
                             <p class="reviews-text">
                                 Это супер крутая инструкция и вы делаете очень полезную вещь 🙂 Спасибо ❤️
                             </p>
-                            <h3 class="reviews-name">Юрий Ставничий</h3>
-                            <h5 class="reviews-prof">фотограф</h5>
                         </div>
 
                         <div class="reviews-item">
-                            <img src="img/reviews.png" alt="Reviews">
                             <p class="reviews-text">
                                 Работа с сервисом приносит радость, потому что высочайший профессионализм, удобство, оперативность, и просто приятные люди!
                             </p>
-                            <h3 class="reviews-name">Александра Селезнева</h3>
-                            <h5 class="reviews-prof">фотограф</h5>
+                        </div>
+
+                        <div class="reviews-item">
+                            <p class="reviews-text">
+                                Это супер крутая инструкция и вы делаете очень полезную вещь 🙂 Спасибо ❤️
+                            </p>
+                        </div>
+
+                        <div class="reviews-item">
+                            <p class="reviews-text">
+                                Работа с сервисом приносит радость, потому что высочайший профессионализм, удобство, оперативность, и просто приятные люди!
+                            </p>
                         </div>
 
                     </div>
@@ -266,7 +302,7 @@
             </div>
 
             <!-- Partners -->
-            <div class="partners">
+            <!-- <div class="partners">
                 <div class="container">
 
                     <h1 class="title">Партнеры</h1>
@@ -288,10 +324,10 @@
                     </div>
 
                 </div>
-            </div>
+            </div> -->
 
             <!-- Record -->
-             <div class="record">
+             <div class="record" id="record">
                 <div class="container">
 
                     <h1 class="record-title">Запишитесь <br> на лечение</h1>
@@ -318,7 +354,7 @@
              </div>
         </div><!-- ./top -->
 
-        <div class="footer">
+        <div class="footer" id="contact">
             <div class="container">
 
                 <div class="footer-socials">
@@ -329,10 +365,11 @@
                 </div>
 
                 <div class="footer-links">
-                    <a href="#">О компании</a>
-                    <a href="#">Новости</a>
-                    <a href="#">Помощь</a>
-                    <a href="#">Контакты</a>
+                    <a href="#team" class="menu-link">Команда</a>
+                    <a href="#about" class="menu-link">О нас</a>
+                    <a href="#services" class="menu-link">Услуги</a>
+                    <a href="#reviews" class="menu-link">Отзывы</a>
+                    <a href="#contact" class="menu-link">Контакты</a>
                 </div>
 
                 <div class="footer-author">
@@ -343,7 +380,19 @@
         </div>
     </div><!-- ./wrapper -->
 
+    
+
     <!-- JS -->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
     <script src="js/main.js"></script>
 </body>
 </html>  
