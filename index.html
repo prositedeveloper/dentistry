@@ -14,6 +14,8 @@
     <meta name="googlebot" content="notranslate">
     <meta name="google" content="nopagereadaloud">
     <link rel="preload" as="image" href="img/ArrowDown.png">
+    <link rel="stylesheet" href="fonts/Stem-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="fonts/Stem-Bold.woff2" as="font" type="font/woff2" crossorigin>
     <link href="css/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/slick.css"/>
     <link rel="stylesheet" href="css/slick-theme.css"/>
@@ -97,7 +99,7 @@
                             <picture>
                                 <source srcset="img/team/1.webp" type="image/webp">
                                 <source srcset="img/team/1.jpg" type="image/jpeg">
-                                <img src="img/team/1.jpg" class="team-img" alt="Team 1" loading="lazy">
+                                <img src="img/team/1.jpg" class="team-img" alt="Team 1" loading="eager">
                             </picture>
                             <h3 class="team-fullname">Бургуев Магомедрасул Айгунович</h3>
                             <p class="team-desc">врач-ортопед</p>
@@ -280,7 +282,7 @@
                             <picture>
                                 <source srcset="img/cabinet/1.webp" type="image/webp">
                                 <source srcset="img/cabinet/1.jpg" type="image/jpeg">
-                                <img src="img/cabinet/1.jpg" data-aos="fade-right" data-aos-delay="150" alt="Cabinet 1" loading="lazy">
+                                <img src="img/cabinet/1.jpg" data-aos="fade-right" data-aos-delay="150" alt="Cabinet 1" loading="eager">
                             </picture>
                         </div>
                         <div class="cabinet-right">
@@ -388,9 +390,9 @@
                             <input type="text" placeholder="E-mail">
                         </div>
                         <label>Выберите услугу:</label> <br>
-                        <input type="radio"><span class="radio-name">Консультация</span> <br>
-                        <input type="radio"><span class="radio-name">Лечение зубов </span><br>
-                        <input type="radio"><span class="radio-name">Удаление зубов </span><br>
+                        <input type="radio" id="consult" name="service"><span class="radio-name">Консультация</span> <br>
+                        <input type="radio" id="treatment" name="service"><span class="radio-name">Лечение зубов </span><br>
+                        <input type="radio" id="removal" name="service"><span class="radio-name">Удаление зубов </span><br>
                         <button class="record-btn">Оставить заявку</button>
                         <p class="record-text">
                             <span>Оставляя заявку, вы соглашаетесь на</span> обработку персональных данных 
