@@ -7,12 +7,15 @@
     <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
     <link rel="shortcut icon" href="favicon/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="dr.tsakhaeva.clinic" />
     <link rel="manifest" href="favicon/site.webmanifest" />
     <meta name="keywords" content="стоматология, стоматолог, стоматология в каспийске, сайт о стоматологии, клиника цахаева">
     <meta name="description" content="Безболезненное лечение, протезирование и отбеливание зубов с гарантией качества. Современные технологии, комфортная атмосфера и доступные цены. Вернём здоровье и красоту вашей улыбки!">
     <meta name="googlebot" content="notranslate">
     <meta name="google" content="nopagereadaloud">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="css/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/slick.css"/>
+    <link rel="stylesheet" href="css/slick-theme.css"/>
     <link rel="stylesheet" href="css/style.css">
     <title>Стоматология</title>
 </head>
@@ -41,11 +44,7 @@
                             <a href="#services" class="menu-link">Услуги</a>
                             <a href="#reviews" class="menu-link">Отзывы</a>
                             <a href="#contact" class="menu-link">Контакты</a>
-                            <!-- <div class="phone">
-                                <span>Cлужба продаж</span>
-                                <span>+7 495 123-45-67</span>
-                            </div> -->
-                            <a href="tel:89634230522">
+                            <a href="tel:89887792225">
                                 <button class="header-button">Заказать звонок</button>
                             </a>
                         </nav>
@@ -64,9 +63,11 @@
                         <h3 class="subtitle intro-subtitle">Мы работаем с материалами ведущих мировых производителей <br> и предоставляем 100% гарантию</h3>
                         <div class="intro-btn">
                             <a href="#record">
-                                <button>Записаться на лечение</button>
+                                <button class="intro-btn-record">Записаться на лечение</button>
                             </a>
-                            <button>О стоматологии</button>
+                            <a href="#about">
+                                <button class="intro-btn-about">О стоматологии</button>
+                            </a>
                         </div>
                         <p class="intro-text">Оставьте заявку прямо сейчас и получите в подарок бесплатную <br> диагностику состояния ваших зубов</p>
 
@@ -194,7 +195,7 @@
                 <div class="container">
 
                     <!-- <h3 class="subtitle services-title">Категория</h3> -->
-                    <h1 class="title" style="color: #fff;">Эстетика, которой можно доверять</h1>
+                    <h1 class="title" style="color: #fff;">Наши услуги</h1>
                     <p class="services-text">
                         В клинике Цахаевой мы объединяем безупречную красоту улыбки и надежность современных технологий. Доверьте здоровье профессионалам, которые дают 110% гарантии
                     </p>
@@ -242,21 +243,21 @@
 
                     <div class="cabinet-inner">
                         <div class="cabinet-left">
-                            <img src="img/cabinet/1.jpg" alt="Cabinet 1">
+                            <img src="img/cabinet/1.jpg" data-aos="fade-right" data-aos-delay="150" alt="Cabinet 1">
                         </div>
                         <div class="cabinet-right">
-                            <img src="img/cabinet/2.jpg" alt="Cabinet 2">
-                            <img src="img/cabinet/3.jpg" alt="Cabinet 3">
+                            <img src="img/cabinet/2.jpg" data-aos="fade-left" data-aos-delay="300" alt="Cabinet 2">
+                            <img src="img/cabinet/3.jpg" data-aos="fade-left" data-aos-delay="450" alt="Cabinet 3">
                         </div>
                     </div>
 
                     <div class="cabinet-inner">
                         <div class="cabinet-right">
-                            <img src="img/cabinet/4.jpg" alt="Cabinet 2">
-                            <img src="img/cabinet/5.jpg" alt="Cabinet 3">
+                            <img src="img/cabinet/4.jpg" data-aos="fade-right" data-aos-delay="600" alt="Cabinet 2">
+                            <img src="img/cabinet/5.jpg" data-aos="fade-right" data-aos-delay="750" alt="Cabinet 3">
                         </div>
                         <div class="cabinet-left">
-                            <img src="img/cabinet/6.jpg" alt="Cabinet 1">
+                            <img src="img/cabinet/6.jpg" data-aos="fade-left" data-aos-delay="900" alt="Cabinet 1">
                         </div>
                     </div>
 
@@ -274,25 +275,40 @@
                         
                         <div class="reviews-item">
                             <p class="reviews-text">
-                                Это супер крутая инструкция и вы делаете очень полезную вещь 🙂 Спасибо ❤️
+                                Все отлично, хорошая работа, вежливость всего персонала, старание врача и вполне приемлемые цены
                             </p>
                         </div>
 
                         <div class="reviews-item">
                             <p class="reviews-text">
-                                Работа с сервисом приносит радость, потому что высочайший профессионализм, удобство, оперативность, и просто приятные люди!
+                                Шла к вам и думала что будет сложное удаление и очень боялась, но все прошло легко и просто.
+                                Спасибо большое вам ❤️ внимательные девочки и легкие руки Рустама. Дай Аллах здоровья каждому 🙏🏻
                             </p>
                         </div>
 
                         <div class="reviews-item">
                             <p class="reviews-text">
-                                Это супер крутая инструкция и вы делаете очень полезную вещь 🙂 Спасибо ❤️
+                                Был на удалении зуба. Отличное отношение персонала к пациентам. Рустам Заявутдинович, вы врач от Бога. Спасибо большое
                             </p>
                         </div>
 
                         <div class="reviews-item">
                             <p class="reviews-text">
-                                Работа с сервисом приносит радость, потому что высочайший профессионализм, удобство, оперативность, и просто приятные люди!
+                                Все понравилось было не больно, а самое главное качественно
+                            </p>
+                        </div>
+
+                        <div class="reviews-item">
+                            <p class="reviews-text">
+                                Стоматолог Цахаева Патимат провела удаление корней зубов. Четкое, доброжелательное отношение к пациенту, грамотный квалифицированный подход отличают этого врача. 
+                                Рекомендую этого специалиста и эту клинику всем, кто ждет индивидуального, профессионального подхода к каждому посетителю!
+                            </p>
+                        </div>
+
+                        <div class="reviews-item">
+                            <p class="reviews-text">
+                                Спасибо приветливым администратором. Напоили сладким чаем, предложили перекусить. 
+                                Теперь только сюда, и посоветую всем своим друзьям и знакомым. Спасибо, «Все свои»! Вам удачи!
                             </p>
                         </div>
 
@@ -300,31 +316,6 @@
 
                 </div>
             </div>
-
-            <!-- Partners -->
-            <!-- <div class="partners">
-                <div class="container">
-
-                    <h1 class="title">Партнеры</h1>
-                    <h3 class="subtitle">Продавать больше - это все, что нужно, чтобы направлять посетителей через правильные шаги</h3>
-
-                    <div class="partners-inner">
-                        <div class="partners-item">
-                            <img src="img/partners/1.png" alt="Partners 1">
-                        </div>
-                        <div class="partners-item">
-                            <img src="img/partners/2.png" alt="Partners 2">
-                        </div>
-                        <div class="partners-item">
-                            <img src="img/partners/3.png" alt="Partners 3">
-                        </div>
-                        <div class="partners-item">
-                            <img src="img/partners/4.png" alt="Partners 4">
-                        </div>
-                    </div>
-
-                </div>
-            </div> -->
 
             <!-- Record -->
              <div class="record" id="record">
@@ -345,7 +336,7 @@
                         <input type="radio"><span class="radio-name">Удаление зубов </span><br>
                         <button class="record-btn">Оставить заявку</button>
                         <p class="record-text">
-                            <span>Оставляя заявку, вы соглашаетесь на</span> обработку персональных данных <br> и с условиями бронирования счёта
+                            <span>Оставляя заявку, вы соглашаетесь на</span> обработку персональных данных 
                         </p>
                     </form>
 
@@ -358,10 +349,9 @@
             <div class="container">
 
                 <div class="footer-socials">
-                    <img src="img/footer/facebook.png" alt="Facebook">
-                    <img src="img/footer/instagram.png" alt="Instagram">
-                    <img src="img/footer/twitter.png" alt="Twitter">
-                    <img src="img/footer/vk.png" alt="VK">
+                    <a href="https://www.instagram.com/dr.tsakhaeva.clinic?igsh=MzRlODBiNWFlZA==" target="_blank">
+                        <img src="img/footer/instagram.png" alt="Instagram">
+                    </a>
                 </div>
 
                 <div class="footer-links">
@@ -372,8 +362,16 @@
                     <a href="#contact" class="menu-link">Контакты</a>
                 </div>
 
-                <div class="footer-author">
-                    © 2025 Made by prositedeveloper
+                <div class="footer-inner">
+                    <div class="footer-item">
+                        8(988)-779-22-25
+                    </div>
+                    <div class="footer-item">
+                        г.Каспийск ул.Орджоникидзе 13
+                    </div>
+                    <div class="footer-item">
+                        © 2026 Made by prositedeveloper
+                    </div>
                 </div>
 
             </div>
@@ -383,15 +381,13 @@
     
 
     <!-- JS -->
-     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/aos.js"></script>
     <script>
         AOS.init();
     </script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/jquery.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="js/slick.min.js"></script>
 
     <script src="js/main.js"></script>
 </body>
