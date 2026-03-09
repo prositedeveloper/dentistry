@@ -1,5 +1,18 @@
 'use strict';
 
+(function() {
+    let WebP = new Image();
+    WebP.onload = WebP.onerror = function() {
+        if (WebP.height == 2) {
+            document.documentElement.classList.add('webp');
+        } else {
+            document.documentElement.classList.add('no-webp');
+        }
+    }
+
+    WebP.src = 'data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA';
+});
+
 const header = document.getElementById('header');
 const intro = document.querySelector('.intro');
 
@@ -61,13 +74,15 @@ $(document).ready(function() {
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
+                    infinite: true
                 }
             },
             {
                 breakpoint: 768,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    infinite: true
                 }
             },
         ]

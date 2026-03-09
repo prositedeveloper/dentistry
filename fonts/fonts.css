@@ -1,26 +1,51 @@
 @font-face {
     font-family: 'Stem';
-    src: url('../fonts/Stem-Light.ttf');
+    src: url('../fonts/Stem-Light.woff2') format('woff2'),
+        url('../fonts/Stem-Light.woff') format('woff'),
+        url('../fonts/Stem-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-display: normal;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'Stem-Bold';
-    src: url('../fonts/Stem-Bold.ttf');
+    font-family: 'Stem';
+    src: url('../fonts/Stem-Medium.woff2') format('woff2'),
+        url('../fonts/Stem-Medium.woff') format('woff'),
+        url('../fonts/Stem-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-display: normal;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'Stem-Medium';
-    src: url('../fonts/Stem-Medium.ttf');
+    font-family: 'Stem';
+    src: url('../fonts/Stem-Bold.woff2') format('woff2'),
+        url('../fonts/Stem-Bold.woff') format('woff'),
+        url('../fonts/Stem-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-display: normal;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'Gilroy-Medium';
-    src: url('../fonts/Gilroy-Medium.ttf');
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Medium.woff2') format('woff2'),
+        url('../fonts/Gilroy-Medium.woff') format('woff'),
+        url('../fonts/Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-display: normal;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'Gilroy-Bold';
-    src: url('../fonts/Gilroy-Bold.ttf');
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Bold.woff2') format('woff2'),
+        url('../fonts/Gilroy-Bold.woff') format('woff'),
+        url('../fonts/Gilroy-Bold.ttf') format('truetype');
+    font-weight: 500;
+    font-display: normal;
+    font-display: swap;
 }
 
 

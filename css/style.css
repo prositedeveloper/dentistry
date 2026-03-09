@@ -8,7 +8,8 @@
 }
 
 * {
-    font-family: 'Stem-Medium', sans-serif;
+    font-family: 'Stem', sans-serif;
+    font-weight: 500;
     margin: 0; padding: 0;
     box-sizing: border-box;
     text-decoration: none;
@@ -101,7 +102,7 @@ body {
     justify-content: space-between;
 }
 
-.header-logo a > img {
+.header-logo a > picture > img {
     border-radius: 50%;
     width: 6.5rem;
 }
@@ -201,6 +202,14 @@ body {
     min-height: 79.8rem;
     height: auto;
     margin-bottom: 12rem;
+}
+
+.no-webp .intro {
+    background: rgba(26, 35, 110, 0.5) url('../img/intro.jpg') center / cover no-repeat;
+}
+
+.webp .intro {
+    background: rgba(26, 35, 110, 0.5) url('../img/intro.webp') center / cover no-repeat;
 }
 
 .intro-info {
@@ -516,24 +525,73 @@ body {
     background-image: url('../img/services/1.jpg');
 }
 
+.no-webp .services-item[data-bg="cleaning"] {
+    background: rgba(26, 35, 110, 0.5) url('../img/services/1.jpg') center / cover no-repeat;
+}
+
+.webp .services-item[data-bg="cleaning"] {
+    background: rgba(26, 35, 110, 0.5) url('../img/services/1.webp') center / cover no-repeat;
+}
+
 .services-item[data-bg="filling"] {
     background-image: url('../img/services/2.jpg');
+}
+
+.no-webp .services-item[data-bg="filling"] {
+    background: rgba(26, 35, 110, 0.5) url('../img/services/2.jpg') center / cover no-repeat;
+}
+
+.webp .services-item[data-bg="filling"] {
+    background: rgba(26, 35, 110, 0.5) url('../img/services/2.webp') center / cover no-repeat;
 }
 
 .services-item[data-bg="implantation"] {
     background-image: url('../img/services/3.jpg');
 }
 
+.no-webp .services-item[data-bg="implantation"] {
+    background: rgba(26, 35, 110, 0.5) url('../img/services/3.jpg') center / cover no-repeat;
+}
+
+.webp .services-item[data-bg="implantation"] {
+    background: rgba(26, 35, 110, 0.5) url('../img/services/3.webp') center / cover no-repeat;
+}
+
+
 .services-item[data-bg="crowns"] {
     background-image: url('../img/services/4.jpg');
+}
+
+.no-webp .services-item[data-bg="crowns"] {
+    background: rgba(26, 35, 110, 0.5) url('../img/services/4.jpg') center / cover no-repeat;
+}
+
+.webp .services-item[data-bg="crowns"] {
+    background: rgba(26, 35, 110, 0.5) url('../img/services/4.webp') center / cover no-repeat;
 }
 
 .services-item[data-bg="caries"] {
     background-image: url('../img/services/5.jpg');
 }
 
+.no-webp .services-item[data-bg="caries"] {
+    background: rgba(26, 35, 110, 0.5) url('../img/services/5.jpg') center / cover no-repeat;
+}
+
+.webp .services-item[data-bg="caries"] {
+    background: rgba(26, 35, 110, 0.5) url('../img/services/5.webp') center / cover no-repeat;
+}
+
 .services-item[data-bg="complex-cases"] {
     background-image: url('../img/services/6.jpg');
+}
+
+.no-webp .services-item[data-bg="complex-cases"] {
+    background: rgba(26, 35, 110, 0.5) url('../img/services/6.jpg') center / cover no-repeat;
+}
+
+.webp .services-item[data-bg="complex-cases"] {
+    background: rgba(26, 35, 110, 0.5) url('../img/services/6.webp') center / cover no-repeat;
 }
 
 .services-item-title {
@@ -585,7 +643,7 @@ body {
     margin-bottom: 2rem;
 }
 
-.cabinet-left img {
+.cabinet-left picture > img {
     width: 54rem;
     height: 81rem;
     border-radius: 1.6rem;
@@ -593,15 +651,16 @@ body {
 }
 
 
-.cabinet-right img {
+.cabinet-right picture > img {
     width: 54rem;
     height: 39rem;
     border-radius: 1.6rem;
     object-fit: cover;
 }
 
-.cabinet-right img:first-child {
+.cabinet-right picture:first-child {
     margin-bottom: 3rem;
+    display: block;
 }
 
 
@@ -652,6 +711,14 @@ body {
     height: auto;
     padding: 10rem 0;
     margin-bottom: 8rem;
+}
+
+.no-webp .record {
+    background: rgba(26, 35, 110, 0.5) url('../imgrecord.jpg') center / cover no-repeat;
+}
+
+.webp .record {
+    background: rgba(26, 35, 110, 0.5) url('../img/record.webp') center / cover no-repeat;
 }
 
 .record-title {
@@ -843,7 +910,7 @@ label {
         text-align: center;
     }
 
-    .cabinet-right img:first-child {
+    .cabinet-right picture:first-child {
         margin-bottom: 1rem;
     }
 

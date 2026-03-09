@@ -13,6 +13,7 @@
     <meta name="description" content="Безболезненное лечение, протезирование и отбеливание зубов с гарантией качества. Современные технологии, комфортная атмосфера и доступные цены. Вернём здоровье и красоту вашей улыбки!">
     <meta name="googlebot" content="notranslate">
     <meta name="google" content="nopagereadaloud">
+    <link rel="preload" as="image" href="img/ArrowDown.png">
     <link href="css/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/slick.css"/>
     <link rel="stylesheet" href="css/slick-theme.css"/>
@@ -28,7 +29,11 @@
                     <div class="header-inner">
                         <div class="header-logo">
                             <a href="index.html">
-                                <img src="img/logo.png" alt="Logo" width="40">
+                                <picture>
+                                    <source srcset="img/logo.webp" type="image/webp">
+                                    <source srcset="img/logo.png" type="image/png">
+                                    <img src="img/logo.png" alt="Logo" width="40" loading="lazy">
+                                </picture>
                             </a>
                         </div>
 
@@ -56,6 +61,7 @@
             
 
             <div class="intro">
+                
                 <div class="container">
 
                     <div class="intro-info">
@@ -88,43 +94,71 @@
                     <div class="team-inner">
                         
                         <div class="team-item" data-aos="fade-up" data-aos-delay="150">
-                            <img src="img/team/1.jpg" class="team-img" alt="Team 1">
+                            <picture>
+                                <source srcset="img/team/1.webp" type="image/webp">
+                                <source srcset="img/team/1.jpg" type="image/jpeg">
+                                <img src="img/team/1.jpg" class="team-img" alt="Team 1" loading="lazy">
+                            </picture>
                             <h3 class="team-fullname">Бургуев Магомедрасул Айгунович</h3>
                             <p class="team-desc">врач-ортопед</p>
                         </div>
 
                         <div class="team-item" data-aos="fade-up" data-aos-delay="300">
-                            <img src="img/team/2.jpg" class="team-img" alt="Team 2">
+                            <picture>
+                                <source srcset="img/team/2.webp" type="image/webp">
+                                <source srcset="img/team/2.jpg" type="image/jpeg">
+                                <img src="img/team/2.jpg" class="team-img" alt="Team 2" loading="lazy">
+                            </picture>
                             <h3 class="team-fullname">Арбахов Магомедрасул Магомедович</h3>
                             <p class="team-desc">врач-терапевт</p>
                         </div>
 
                         <div class="team-item" data-aos="fade-up" data-aos-delay="450">
-                            <img src="img/team/3.jpg" class="team-img" alt="Team 3">
+                            <picture>
+                                <source srcset="img/team/3.webp" type="image/webp">
+                                <source srcset="img/team/3.jpg" type="image/jpeg">
+                                <img src="img/team/3.jpg" class="team-img" alt="Team 3" loading="lazy">
+                            </picture>
                             <h3 class="team-fullname">Шихгафизов Рустам Зиявутдинович</h3>
                             <p class="team-desc">врач-терапевт</p>
                         </div>
 
                         <div class="team-item" data-aos="fade-up" data-aos-delay="600">
-                            <img src="img/team/4.jpg" class="team-img" alt="Team 4">
+                            <picture>
+                                <source srcset="img/team/4.webp" type="image/webp">
+                                <source srcset="img/team/4.jpg" type="image/jpeg">
+                                <img src="img/team/4.jpg" class="team-img" alt="Team 4" loading="lazy">
+                            </picture>
                             <h3 class="team-fullname">Хидирбеков Газимагомед Багаутдинович</h3>
                             <p class="team-desc">детский врач</p>
                         </div>
 
                         <div class="team-item" data-aos="fade-up" data-aos-delay="750">
-                            <img src="img/team/5.jpg" class="team-img" alt="Team 5">
+                            <picture>
+                                <source srcset="img/team/5.webp" type="image/webp">
+                                <source srcset="img/team/5.jpg" type="image/jpeg">
+                                <img src="img/team/5.jpg" class="team-img" alt="Team 5" loading="lazy">
+                            </picture>
                             <h3 class="team-fullname">Шкарупа Анастасия Викторовна</h3>
                             <p class="team-desc">врач-терапевт</p>
                         </div>
 
                         <div class="team-item" data-aos="fade-up" data-aos-delay="900">
-                            <img src="img/team/6.jpg" class="team-img" alt="Team 6">
+                            <picture>
+                                <source srcset="img/team/6.webp" type="image/webp">
+                                <source srcset="img/team/6.jpg" type="image/jpeg">
+                                <img src="img/team/6.jpg" class="team-img" alt="Team 6" loading="lazy">
+                            </picture>
                             <h3 class="team-fullname">Цахаева Кистаман Халиловна</h3>
                             <p class="team-desc">врач-ортодонт</p>
                         </div>
 
                         <div class="team-item" data-aos="fade-up" data-aos-delay="1050">
-                            <img src="img/team/7.jpg" class="team-img" alt="Team 7">
+                            <picture>
+                                <source srcset="img/team/7.webp" type="image/webp">
+                                <source srcset="img/team/7.jpg" type="image/jpeg">
+                                <img src="img/team/7.jpg" class="team-img" alt="Team 7" loading="lazy">
+                            </picture>
                             <h3 class="team-fullname">Цахаева Патимат Рамазановна </h3>
                             <p class="team-desc">детский врач</p>
                         </div>
@@ -243,21 +277,44 @@
 
                     <div class="cabinet-inner">
                         <div class="cabinet-left">
-                            <img src="img/cabinet/1.jpg" data-aos="fade-right" data-aos-delay="150" alt="Cabinet 1">
+                            <picture>
+                                <source srcset="img/cabinet/1.webp" type="image/webp">
+                                <source srcset="img/cabinet/1.jpg" type="image/jpeg">
+                                <img src="img/cabinet/1.jpg" data-aos="fade-right" data-aos-delay="150" alt="Cabinet 1" loading="lazy">
+                            </picture>
                         </div>
                         <div class="cabinet-right">
-                            <img src="img/cabinet/2.jpg" data-aos="fade-left" data-aos-delay="300" alt="Cabinet 2">
-                            <img src="img/cabinet/3.jpg" data-aos="fade-left" data-aos-delay="450" alt="Cabinet 3">
+                            <picture>
+                                <source srcset="img/cabinet/2.webp" type="image/webp">
+                                <source srcset="img/cabinet/2.jpg" type="image/jpeg">
+                                <img src="img/cabinet/2.jpg" data-aos="fade-right" data-aos-delay="300" alt="Cabinet 2" loading="lazy">
+                            </picture>
+                            <picture>
+                                <source srcset="img/cabinet/3.webp" type="image/webp">
+                                <source srcset="img/cabinet/3.jpg" type="image/jpeg">
+                                <img src="img/cabinet/3.jpg" data-aos="fade-right" data-aos-delay="450" alt="Cabinet 3" loading="lazy">
+                            </picture>
                         </div>
                     </div>
-
                     <div class="cabinet-inner">
                         <div class="cabinet-right">
-                            <img src="img/cabinet/4.jpg" data-aos="fade-right" data-aos-delay="600" alt="Cabinet 2">
-                            <img src="img/cabinet/5.jpg" data-aos="fade-right" data-aos-delay="750" alt="Cabinet 3">
+                            <picture>
+                                <source srcset="img/cabinet/4.webp" type="image/webp">
+                                <source srcset="img/cabinet/4.jpg" type="image/jpeg">
+                                <img src="img/cabinet/4.jpg" data-aos="fade-right" data-aos-delay="600" alt="Cabinet 4" loading="lazy">
+                            </picture>
+                            <picture>
+                                <source srcset="img/cabinet/5.webp" type="image/webp">
+                                <source srcset="img/cabinet/5.jpg" type="image/jpeg">
+                                <img src="img/cabinet/5.jpg" data-aos="fade-right" data-aos-delay="750" alt="Cabinet 5" loading="lazy">
+                            </picture>
                         </div>
                         <div class="cabinet-left">
-                            <img src="img/cabinet/6.jpg" data-aos="fade-left" data-aos-delay="900" alt="Cabinet 1">
+                            <picture>
+                                <source srcset="img/cabinet/6.webp" type="image/webp">
+                                <source srcset="img/cabinet/6.jpg" type="image/jpeg">
+                                <img src="img/cabinet/6.jpg" data-aos="fade-right" data-aos-delay="900" alt="Cabinet 6" loading="lazy">
+                            </picture>
                         </div>
                     </div>
 
@@ -381,14 +438,13 @@
     
 
     <!-- JS -->
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/slick.min.js" defer></script>
+    <script src="js/main.js" defer></script>
+
     <script src="js/aos.js"></script>
     <script>
         AOS.init();
     </script>
-    <script src="js/jquery.min.js"></script>
-
-    <script src="js/slick.min.js"></script>
-
-    <script src="js/main.js"></script>
 </body>
 </html>  
