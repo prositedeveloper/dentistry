@@ -4,7 +4,7 @@
         url('../fonts/Stem-Light.woff') format('woff'),
         url('../fonts/Stem-Light.ttf') format('truetype');
     font-weight: 300;
-    font-display: normal;
+    font-style: normal;
     font-display: swap;
 }
 
@@ -14,7 +14,7 @@
         url('../fonts/Stem-Medium.woff') format('woff'),
         url('../fonts/Stem-Medium.ttf') format('truetype');
     font-weight: 500;
-    font-display: normal;
+    font-style: normal;
     font-display: swap;
 }
 
@@ -24,7 +24,7 @@
         url('../fonts/Stem-Bold.woff') format('woff'),
         url('../fonts/Stem-Bold.ttf') format('truetype');
     font-weight: 700;
-    font-display: normal;
+    font-style: normal;
     font-display: swap;
 }
 
@@ -34,7 +34,7 @@
         url('../fonts/Gilroy-Medium.woff') format('woff'),
         url('../fonts/Gilroy-Medium.ttf') format('truetype');
     font-weight: 500;
-    font-display: normal;
+    font-style: normal;
     font-display: swap;
 }
 
@@ -44,7 +44,7 @@
         url('../fonts/Gilroy-Bold.woff') format('woff'),
         url('../fonts/Gilroy-Bold.ttf') format('truetype');
     font-weight: 500;
-    font-display: normal;
+    font-style: normal;
     font-display: swap;
 }
 
